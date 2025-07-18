@@ -1,0 +1,38 @@
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def addTwoNumbers(self, l1, l2):
+        a = ""
+        b = ""
+        while l1 or l2 :
+            print(l1,l2)
+            a = str(l1.val) + a
+            b = str(l2.val) + b
+            l1 = l1.next
+            l2 = l2.next
+        sum = int(a) + int(b)
+        return sum
+
+
+# ฟังก์ชันสร้าง Linked List จาก list ธรรมดา
+def create_linked_list(lst):
+    dummy = ListNode(0)
+    current = dummy
+    for num in lst:
+        current.next = ListNode(num)
+        current = current.next
+    return dummy.next
+
+
+l1 = [2,4,3]
+l2 = [5,6,4]
+list1 = create_linked_list(l1)
+list2 = create_linked_list(l2)
+
+
+solotion = Solution()
+result = solotion.addTwoNumbers(list1,list2)
+print(result)
