@@ -17,3 +17,5 @@ s = "MCMXCIV"
 solution = Solution()
 result = solution.romanToInt(s)
 print(result)
+
+#Check
