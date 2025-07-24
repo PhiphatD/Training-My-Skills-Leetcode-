@@ -17,9 +17,6 @@ class Solution(object):
         return new_digit
     
     
-    
-    
-    
 digits = [0]  
 solution = Solution()
 result = solution.plusOne(digits)
