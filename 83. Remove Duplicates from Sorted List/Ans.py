@@ -23,10 +23,10 @@ class Solution(object):
         
         while head :
             if current.val == head.val :
-                
                 head = head.next
             elif current.val != head.val :
-                current.nex = ListNode(head.val)
+                current.next = ListNode(head.val)
+                current = current.next
                 head = head.next
 
         return dummy
